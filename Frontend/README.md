@@ -1,4 +1,4 @@
-## LOCQUM CVO APP
+## Calculadora de horas de trabajo
 
 #### Descripción
 
