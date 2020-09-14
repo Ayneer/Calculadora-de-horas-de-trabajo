@@ -1,0 +1,22 @@
+.TabsAnimation-enter {
+  opacity: 0.01;
+}
+
+.TabsAnimation-enter.TabsAnimation-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.TabsAnimation-leave {
+  opacity: 1;
+}
+
+.TabsAnimation-leave.TabsAnimation-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.Backdrop{
+  z-index: $zIndexDrawer + 1 !important;
+  color: #fff;
+}

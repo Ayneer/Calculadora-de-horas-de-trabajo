@@ -1,0 +1,37 @@
+body{
+    background: #f1f4f6;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: .88rem;
+}
+
+@import "layout/metismenu.scss";
+@import "layout/index.scss";
+@import "animations/index.scss";
+
+.displayNone{
+    display: none !important;
+}
+
+.text1{
+    color: $textColor;
+    font-size: 17px !important;
+}
+
+.text2{
+    color: $textColor;
+    font-size: 15px !important;
+}
+
+.form-gruop-redux{
+    margin-bottom: 40px;
+}
+
+.body-page{
+    padding: 0;
+}
+
+.header-page{
+    margin-bottom: 2rem;
+}

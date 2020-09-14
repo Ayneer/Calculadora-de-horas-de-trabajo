@@ -1,0 +1,23 @@
+module.exports = {
+    CREATED_RESOURCE: "RECURSO CREADO CON EXITO",
+    ERROR_CREATE_RESOURCE: "NO SE PUDO CRER EL RECURSO",
+    FOUND_RESOURCE: "RECURSO ENCONTRADO CON EXITO",
+    NO_FOUND_RESOURCE: "RECURSO(s) NO ENCONTRADO(s)",
+    EDITED_RESOURCE: "RECURSO EDITADO CON EXITO",
+    DELETED_RESOURCE: "RECURSO ELIMINADO CON EXITO",
+    DELETED_RESOURCE: "RECURSO ELIMINADO CON EXITO",
+    ERROR_DELETE_RESOURCE: "NO SE PUDO ELIMINAR EL RECURSO",
+    GETS_RESOURCE: "RECURSOS LISTADOS CON EXITO",
+    INTERNAL_ERROR: "ERROR INTERNO EN EL SERVIDOR",
+    PROCESS_STOPPED: "PROCESO DETENIDO",
+
+    responseModel: (error, status, data, codigoError, mensaje) => {
+        return {
+            error,
+            status,
+            data,
+            codigoError,
+            mensaje
+        }
+    }
+}
