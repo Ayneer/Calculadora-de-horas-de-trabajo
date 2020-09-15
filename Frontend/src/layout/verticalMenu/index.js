@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Drawer, Divider, useTheme, useMediaQuery } from '@material-ui/core';
 import clsx from 'clsx';
@@ -19,6 +19,7 @@ const VerticalMenu = ({ history }) => {
     //Para el manejo de mediaQuery
     const theme = useTheme();
     const isSm_Xs = useMediaQuery(theme.breakpoints.between('xs', 'sm'));
+    const isMd = useMediaQuery(theme.breakpoints.only('md'));
 
     //Si se esta en dispositivos pequeños, se debe abrir el menú cuando este sea presionado
     const _onClickVerticalMenu = () => {
@@ -26,6 +27,13 @@ const VerticalMenu = ({ history }) => {
             dispatch(toggleMenu(true));
         }
     }
+
+    useEffect(() => {
+        if(isMd && menuState){
+            dispatch(toggleMenu(false));
+        }
+        return () => {}
+    }, [isMd, dispatch, menuState]);
 
     return (
         <Drawer
