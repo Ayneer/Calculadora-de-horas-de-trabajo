@@ -43,7 +43,7 @@ npm test
 #### Preparar ambiente para la base de datos
 
 - Contar con mongoDB local u otro (nube)
-- Crear un archivo .env en la raiz del proyecto con los siguientes datos. (Esto si se trabaja con mongoDB local, si utiliza otro, debe llenar la respectiva configuración)
+- Crear un archivo .env en la raiz del proyecto con los siguientes datos. (El siguiente ejemplo contiene los datos si se trabaja con mongoDB local, si utiliza otro, debe llenarlos como lo indique la plataforma que use)
 ````
 MONGO_HOST = localhost
 MONGO_PORT = 27017
